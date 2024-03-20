@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyTV</title>
+    <!-- local css file in public directory -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <main>   
+        <h1> <%= showdata.showname %> </h1>
+        <img src="<%= showdata.imgpath %>" width="210px">
+        <h4>Description</h4>
+        <p><%= showdata.descript %></p>
+        <h4>Cast</h4>
+        <p><%= actordata.actorname %></p>
+        <p>posted by: <%= showdata.user_id %></p>
+    </main>
+</body>
+</html>
